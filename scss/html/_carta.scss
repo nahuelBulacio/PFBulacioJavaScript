@@ -7,7 +7,8 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-.main-carta{
+
+.main-carta {
     display: flex;
     justify-content: space-around;
 }
@@ -46,10 +47,12 @@
     font-size: 1rem;
     font-weight: normal;
 }
-.achicar{
+
+.achicar {
     font-size: 1rem;
 }
-.precio{
+
+.precio {
     font-family: 'Gentium Book Basic';
     font-size: 1.5rem;
     text-align: center;
@@ -80,11 +83,12 @@
 }
 
 .foto-comida {
-    @include medidas(10rem, 10rem);
+    @include medidas(auto, 10rem);
     box-shadow: 1px 1px 2px black;
     object-fit: cover;
 }
-.foto-pedido{
+
+.foto-pedido {
     @include medidas(auto, 10rem);
     object-fit: cover;
 }
@@ -93,4 +97,3 @@
     @include medidas(13rem, auto);
     margin-top: 0.8rem;
 }
-

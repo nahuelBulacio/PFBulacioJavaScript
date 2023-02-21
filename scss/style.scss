@@ -22,7 +22,8 @@ header {
     border: 2px black solid;
     padding-left: 6rem;
     letter-spacing: 0.1rem;
-    nav{
+
+    nav {
         h1 {
             font-family: "Dancing Script";
             font-size: 4.5rem;
@@ -30,7 +31,8 @@ header {
             text-shadow: 3px 3px 5px black;
             margin-right: 8rem;
         }
-        a{
+
+        a {
             img {
                 @include align;
                 height: 5rem;
@@ -39,11 +41,13 @@ header {
                 box-shadow: 2px 2px 3px black;
                 border-radius: 2.5rem;
             }
+
             img:hover {
                 transform: rotateZ(10deg);
                 filter: drop-shadow(5px 5px 3px black);
             }
         }
+
         div {
             div {
                 ul {
