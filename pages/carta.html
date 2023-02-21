@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="Restaurante, Comida, Italia, Pizza, Bebidas, Sandwich, Carta, Plato, Pasta, Ensalada, Sopa, Postre, Queso">
+  <meta name="description"
+    content="Se visualizan cada uno de los mejores platos que tenemos en este fabuloso restaurante, con cada uno de sus más importantes ingredientes que lo conforman. También, existe la posibilidad de agregar la comida al pedido.">
+
+  <!-- tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Roboto+Mono:ital,wght@1,100&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=EB+Garamond:ital@1&family=Karla:ital@1&family=Roboto+Mono:ital,wght@1,100&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- librerias -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" type="application/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.2/sweetalert2.min.js">
+
+  <!-- CSS BT -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- link de mi css -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Carta Elegantis</title>
+</head>
+
+<body>
+  <!-- encabezado -->
+  <div class="contenedor">
+    <header id="arriba">
+      <nav class="navbar navbar-expand-sm navegacion">
+        <h1>Elegantis</h1>
+        <a href="../index.html">
+          <img src="../img/logos/logo-restaurante.jpeg" alt="Logo de restaurante italiano" class="img-menu">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="enlaces container-fluid">
+          <div class="collapse navbar-collapse parte-nav" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <div class="menu menu-pages">
+                  <a class="texto-nav nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="menu">
+                  <a class="nav-link texto-nav" href="carta.html">Carta</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="menu">
+                  <a class="nav-link texto-nav" href="contacto.html">Contacto</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="menu">
+                  <a class="nav-link texto-nav" href="nosotros.html">Nosotros</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="menu">
+                  <a class="nav-link texto-nav" href="valoracion.html">Valóranos</a>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main-carta">
+
+      <div class="row mt-5 comidas" id="contenedor"></div>
+      <!-- redes sociales -->
+      <div class="redes-sociales">
+        <div>
+          <a href="https://www.facebook.com/" target="_blank"><img src="../img/logos/facebook.png"
+              alt="Imágen de Facebook" class="red-social"></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/" target="_blank"><img src="../img/logos/logo-ig.png"
+              alt="Imágen de Instagram" class="red-social"></a>
+        </div>
+        <div>
+          <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/logos/whatsapp.png"
+              alt="Imágen de Whatsapp" class="red-social"></a>
+        </div>
+      </div>
+      <!-- carrito de compras -->
+    <div id="carrito-compras" class="encargo">
+            <a data-toggle="modal" data-target="#modal">      
+                <div class="bi bi-cart contador" id="contadorComidas">0</div>
+              <img src="../img/logos/bandeja-comida.jpg" alt="Imágen de bandeja de comida"
+              class="bandeja-comida">
+            </a>
+      </div>
+    </main>
+
+    <div class="container-xl">
+      <div class="modal" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog carritoDeCompras" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Pedido</h5>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" id="vaciarCarrito">Eliminar todo</button>
+              <button type="button" id="comprar" data-dismiss="modal"class="btn boton-comprar">Comprar</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Volver</button>
+              <span><strong>Total: $ <p class="text-center" id="precioTotal"></p></strong></span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <!--pie de página -->
+    <footer>
+      <h3 class="derechos">© Todos los derechos reservados - Nahuel Bulacio</h3>
+      <div class="contenedor-volver">
+        <a href="#arriba" class="volver">Ir arriba</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

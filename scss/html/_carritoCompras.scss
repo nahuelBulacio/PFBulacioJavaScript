@@ -1,0 +1,83 @@
+.encargo {
+    z-index: 11;
+    flex-direction: column;
+    display: flex;
+    position: fixed;
+    top: 4.5rem;
+    right: 1rem;
+    gap: 0.6rem;
+    filter:drop-shadow(2px 2px 3px black);
+    height: 3rem;
+    border-radius: 1rem;
+}
+strong{
+    display: flex;
+    flex-direction: row;
+}
+
+.bandeja-comida {
+    filter: brightness(1.05);
+    mix-blend-mode: multiply;
+    display: block;
+    height: 3.5rem;
+    width: auto;
+    border-radius: 5rem;
+    background-color: white;
+}
+.contador{
+    background-color:rgb(1, 1, 44);
+    width: 1.5rem;
+    height: auto;
+    border-radius: 99rem;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+.imagen{
+    max-width:100%;
+}
+
+a{
+    cursor:pointer;
+    text-decoration: none;
+
+}
+.alertaPedido{
+    background: linear-gradient(to right, rgb(45, 45, 152),rgb(1, 1, 44))
+}
+.modal-contenedor{
+    display:flex;
+    align-items: center;
+    gap:2rem;
+    margin-bottom: 2rem;
+}
+.modal-content{
+    background-color: #E3D8D6;
+    width: 45rem;
+}
+#precioTotal{
+    margin:0;
+    padding:0;
+}
+.boton{
+    opacity:0;
+}
+.carritoDeCompras{
+    display: flex;
+    justify-content: center;
+}
+.pedidosCarrito{
+    font-family: fantasy;
+    font-size: 1.5rem;
+    color: black;
+    text-shadow: 3px 3px 5px white;
+    text-align: center;
+}
+.boton-comprar{
+    background-color: rgb(10, 90, 27);
+    color: aliceblue;
+}
+.boton-comprar:hover{
+    background-color: rgb(10, 65, 27);
+    color: aliceblue;
+}

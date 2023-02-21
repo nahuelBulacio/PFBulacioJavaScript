@@ -1,0 +1,49 @@
+/* carrusel */
+.main-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 0.1fr 0.8fr;
+    grid-template-areas:
+        "carrusel carrusel"
+        "h2 h2"
+        "mapa texto";
+    row-gap: 1.5rem;
+    column-gap: 6rem;
+}
+
+.foto-restaurante {
+    @include medidas(100%, 35rem);
+    object-fit: cover;
+}
+
+.carrusel {
+    grid-area: carrusel;
+    box-shadow: $sombreado;
+}
+
+/* parte informativa del index */
+.subtitulos {
+    font-family: EB Garamond;
+    font-size: 2rem;
+    grid-area: h2;
+    @include centrar;
+}
+
+.texto {
+    @include medidas(25rem, auto);
+    grid-area: texto;
+    justify-self: start;
+    align-self: center;
+}
+
+.mapa-ubicacion {
+    @include medidas(25rem, 20rem);
+}
+
+.contenedor-mapa {
+    grid-area: mapa;
+    @include medidas(25rem, 20rem);
+    box-shadow: $sombreado;
+    justify-self: end;
+    align-self: center;
+}

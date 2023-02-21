@@ -1,0 +1,313 @@
+/* tamaño de pantalla para iPad Air */
+@media screen and (max-width:820px) {
+    .contenedor {
+        @include medidas(100%, 100%);
+        margin: 0;
+    }
+
+    header {
+        @include medidas(100%, auto);
+        padding: 0.5rem 2rem;
+        margin: 0;
+    }
+
+    .navegacion {
+        @include medidas(100%, auto);
+        padding: 0;
+    }
+
+    .img-menu {
+        margin: 0;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    h1,
+    header img,
+    ul {
+        scale: 0.8;
+    }
+
+    .enlaces {
+        margin: 0;
+        padding: 0;
+    }
+
+    .seccion-nav {
+        @include medidas(6rem, auto);
+    }
+
+    .carrusel,
+    .foto-restaurante {
+        @include medidas(100%, 30rem);
+        margin-bottom: 1rem;
+    }
+
+    .main-index {
+        @include medidas(100%, auto);
+    }
+
+    .texto {
+        @include medidas(85%, auto);
+    }
+
+    .contenedor-mapa {
+        @include medidas(85%, 85%);
+    }
+
+    .mapa {
+        @include medidas(100%, 100%);
+    }
+
+    .subtitulos {
+        margin-bottom: 1rem;
+    }
+
+    .main-carta {
+        @include medidas(100%, auto);
+        padding: 0;
+    }
+
+    .plato {
+        @include medidas(100%, auto);
+    }
+
+    .comida {
+        @include medidas(100%, auto);
+        margin: 0;
+    }
+
+    .plato,
+    .foto-comida,
+    .nombre-comida {
+        scale: 0.9;
+    }
+
+    .parte-nav {
+        margin: 0;
+        padding: 0;
+        @include medidas(1rem, auto);
+    }
+
+    .main-contacto {
+        @include medidas(auto, 100%);
+    }
+
+    .form-contacto {
+        margin-bottom: 7rem;
+    }
+
+    .subtitulo-contacto {
+        margin-top: 5rem;
+    }
+
+    .imagen-informacion1,
+    .imagen-informacion2,
+    .imagen-informacion3,
+    .imagen-informacion4,
+    .texto-informacion {
+        @include medidas(20rem, auto);
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .informacion-1 {
+        margin-top: 3rem;
+    }
+
+    .imagen-informacion1 {
+        margin-top: 5rem;
+    }
+
+    .main-valoracion {
+        @include medidas(auto, 100%);
+    }
+
+    .form-valoracion {
+        margin-bottom: 14rem;
+    }
+
+    .subtitulo-valoracion {
+        margin-top: 3rem;
+    }
+}
+
+/* tamaño de pantalla para celulares */
+@media screen and (max-width:500px) {
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1,
+    header img,
+    .volver {
+        scale: 0.7;
+    }
+
+    header h1 {
+        margin-right: 0;
+        justify-content: space-around;
+    }
+
+    .img-menu {
+        margin-right: 0;
+    }
+
+    header {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-index {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        box-shadow: $sombreado;
+        @include medidas(auto, 100%);
+    }
+
+    .red-social {
+        display: none;
+    }
+
+    footer {
+        margin-top: 0;
+        display: flex;
+        bottom: 0;
+        justify-content: space-between;
+    }
+
+    .carrusel,
+    .foto-restaurante {
+        @include medidas(100%, 20rem);
+        margin-bottom: 1rem;
+    }
+
+    nav div div ul li {
+        font-family: fantasy;
+        background-color: $color-botones;
+        text-shadow: $sombreado;
+        border-radius: 10px;
+        box-shadow: $sombreado;
+        color: $color_letras_botones
+    }
+
+    .texto-informacion {
+        @include medidas(20rem, auto);
+    }
+
+    .main-nosotros {
+        @include align;
+        flex-direction: column;
+        @include medidas(100%, auto);
+    }
+
+    .imagen-informacion1,
+    .imagen-informacion2,
+    .imagen-informacion3,
+    .imagen-informacion4 {
+        margin-top: 0;
+    }
+
+    .main-carta {
+        @include align;
+        flex-direction: column;
+        @include medidas(100%, auto);
+    }
+
+    .comidas {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        margin-bottom: 18rem;
+        @include medidas(auto, 10rem);
+    }
+
+    .plato {
+        scale: 0.8;
+        justify-self: center;
+    }
+
+    .main-valoracion {
+        @include medidas(100%, 100%);
+    }
+
+    #fondo-chef {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @include medidas(auto, 57rem);
+    }
+
+    .texto {
+        @include medidas(20rem, auto);
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .subtitulos {
+        font-size: 2rem;
+    }
+
+    .contenedor-mapa {
+        align-self: center;
+    }
+
+    .mapa {
+        @include medidas(20rem, 20rem);
+    }
+
+    .contenedor-mapa {
+        @include medidas(20rem, 20rem);
+        margin-bottom: 2rem;
+    }
+
+    .derechos {
+        font-size: 0.7rem;
+    }
+
+    .contenedor-volver {
+        @include medidas(auto, 2rem);
+    }
+
+    .volver {
+        font-size: 0.7rem;
+    }
+
+    .separador {
+        font-size: 1.7rem;
+    }
+
+    .comidas {
+        @include medidas(100%, 26rem);
+        margin-bottom: 20rem;
+    }
+
+    .main-carta {
+        @include medidas(auto, 465rem);
+    }
+
+    .main-valoracion {
+        @include medidas(100%, 45rem);
+        align-self: center;
+    }
+
+    header nav h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 4rem;
+    }
+
+    .subtitulo-valoracion {
+        margin-top: 12rem;
+    }
+
+    .subtitulo-contacto {
+        margin-top: 3rem;
+    }
+}

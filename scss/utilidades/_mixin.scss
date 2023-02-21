@@ -1,0 +1,20 @@
+@mixin align {
+    display: flex;
+    align-items: center;
+}
+
+@mixin separar {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin centrar {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+@mixin medidas($largo, $alto) {
+    width: $largo;
+    height: $alto;
+}

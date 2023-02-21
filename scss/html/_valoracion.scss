@@ -1,0 +1,38 @@
+.main-valoracion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+#fondo-chef {
+    background-image: url("../img/restaurante/cocinando.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-valoracion {
+    background-color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+    box-shadow: 2px 3px 2px rgb(29, 28, 28);
+    @include centrar;
+}
+
+.form-valoracion:hover {
+    box-shadow: 2px 2px 12px black;
+}
+
+.subtitulo-valoracion {
+    color: $color_letras_botones;
+    font-family: fantasy;
+    background-color: rgb(15, 15, 15);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    box-shadow: $sombreado;
+    margin-bottom: 1rem;
+    grid-area: h2;
+}

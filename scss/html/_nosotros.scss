@@ -1,0 +1,69 @@
+@import "../utilidades/extend";
+
+.main-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-areas:
+        "img-1 info-1"
+        "info-2 img-2"
+        "img-3 info-3"
+        "info-4 img-4"
+        "footer footer";
+    column-gap: 2rem;
+    justify-content: space-around;
+}
+
+.informacion-1 {
+    @extend %estiloInformacion;
+    grid-area: info-1;
+}
+
+.informacion-2 {
+    @extend %estiloInformacion;
+    grid-area: info-2;
+}
+
+.informacion-3 {
+    @extend %estiloInformacion;
+    grid-area: info-3;
+}
+
+.informacion-4 {
+    @extend %estiloInformacion;
+    grid-area: info-4;
+}
+
+.imagen-informacion1 {
+    @extend %estiloImagen;
+    grid-area: img-1;
+    justify-self: flex-end;
+}
+
+.imagen-informacion2 {
+    @extend %estiloImagen;
+    grid-area: img-2;
+    justify-self: flex-start;
+}
+
+.imagen-informacion3 {
+    @extend %estiloImagen;
+    grid-area: img-3;
+    justify-self: flex-end;
+}
+
+.imagen-informacion4 {
+    @extend %estiloImagen;
+    grid-area: img-4;
+    justify-self: flex-start;
+}
+
+.texto-informacion {
+    width: 70%;
+    font-family: fantasy;
+    grid-area: texto;
+}
+
+.titulo-informacion {
+    font-family: "EB Garamond";
+    font-size: 2rem;
+}

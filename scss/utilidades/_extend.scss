@@ -1,0 +1,15 @@
+%estiloInformacion {
+    @include medidas(100%, auto);
+    @include align;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+%estiloImagen {
+    @include medidas(30rem, auto);
+    border-radius: 1.2rem;
+    box-shadow: $sombreado;
+    margin-top: 2.4rem;
+    margin-bottom: 2.8rem;
+}

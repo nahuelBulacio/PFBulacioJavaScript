@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Opinión, Experiencia, Comida, Atención, Calidad, Valoración">
+    <meta name="description"
+        content="Si ya has tenido la posibilidad de comer y probar uno de nuestros excelentes platos, nos sería de gran ayuda que opines y valores tanto nuestro equipo como establecimiento.">
+
+    <!-- tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Roboto+Mono:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=EB+Garamond:ital@1&family=Karla:ital@1&family=Roboto+Mono:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <!-- CSS BT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- link de mi css -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Valóranos Elegantis</title>
+</head>
+
+<body>
+    <!-- encabezado -->
+    <div class="contenedor" id="fondo-chef">
+        <header id="arriba">
+            <nav class="navbar navbar-expand-sm navegacion">
+                <h1>Elegantis</h1>
+                <a href="../index.html">
+                    <img src="../img/logos/logo-restaurante.jpeg" alt="Logo de restaurante italiano" class="img-menu">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="enlaces container-fluid">
+                    <div class="collapse navbar-collapse parte-nav" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <div class="menu menu-pages">
+                                    <a class="texto-nav nav-link" aria-current="page" href="../index.html">Inicio</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="menu">
+                                    <a class="nav-link texto-nav" href="carta.html">Carta</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="menu">
+                                    <a class="nav-link texto-nav" href="contacto.html">Contacto</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="menu">
+                                    <a class="nav-link texto-nav" href="nosotros.html">Nosotros</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="menu">
+                                    <a class="nav-link texto-nav" href="valoracion.html">Valóranos</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main-valoracion">
+
+            <!-- redes sociales -->
+            <div class="redes-sociales">
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../img/logos/facebook.png"
+                            alt="Imágen de Facebook" class="red-social"></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../img/logos/logo-ig.png"
+                            alt="Imágen de Instagram" class="red-social"></a>
+                </div>
+                <div>
+                    <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/logos/whatsapp.png"
+                            alt="Imágen de Whatsapp" class="red-social"></a>
+                </div>
+            </div>
+
+            <!-- valoracion -->
+
+            <h2 class="subtitulo-valoracion">TU OPINIÓN NOS IMPORTA</h2>
+            <form class="form-valoracion">
+                <div>
+                    <label for="valoracion">Valóranos del 1 al 10</label>
+                    <select name="valoracion" id="" class="pregunta">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="vuelta">¿Volverías a comer en Elegantis?</label>
+                    <select name="vuelta" id="" class="pregunta">
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="atencion">¿Cómo fue la atención de los mozos?</label>
+                    <select name="atencion" id="" class="pregunta">
+                        <option value="lenta">Lenta</option>
+                        <option value="rapida">Rápida</option>
+                        <option value="muy-rapida">Muy rápida</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comida">¿Cómo estuvo la comida?</label>
+                    <select name="comida" id="" class="pregunta">
+                        <option value="otra-cosa">Me esperaba otra cosa</option>
+                        <option value="buena">Buena</option>
+                        <option value="riquisima">Me sorprendió, ¡Riquísima!</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comentario">Comenta tu experiencia en el restaurante</label>
+                    <textarea name="comentario" id="" cols="30" rows="10" placeholder="Ej: El mozo era muy amigable..."
+                        class="pregunta"></textarea>
+                </div>
+                <div>
+                    <input type="submit" class="enviar">
+                </div>
+            </form>
+        </main>
+        <!-- pie de página -->
+        <footer>
+            <h3 class="derechos">© Todos los derechos reservados - Nahuel Bulacio</h3>
+            <div class="contenedor-volver">
+                <a href="#arriba" class="volver">Ir arriba</a>
+            </div>
+        </footer>
+    </div class="contenedor">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
